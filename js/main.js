@@ -6,10 +6,10 @@
 (function($) {
 
     "use strict";
-    
+
     var cfg = {
         scrollDuration : 800, // smoothscroll duration
-        mailChimpURL   : 'https://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e6957d85dc'   // mailchimp url
+        mailChimpURL   : 'https://decompiled.us20.list-manage.com/subscribe/post?u=393cabcba1cdbcee2cceaf88f&amp;id=e0d75d823c'   // mailchimp url
     },
 
     $WIN = $(window);
@@ -23,7 +23,7 @@
    /* Preloader
     * -------------------------------------------------- */
     var ssPreloader = function() {
-        
+
         $("html").addClass('ss-preload');
 
         $WIN.on('load', function() {
@@ -31,16 +31,16 @@
             //force page scroll position to top at page refresh
             $('html, body').animate({ scrollTop: 0 }, 'normal');
 
-            // will first fade out the loading animation 
+            // will first fade out the loading animation
             $("#loader").fadeOut("slow", function() {
                 // will fade out the whole DIV that covers the website.
                 $("#preloader").delay(300).fadeOut("slow");
-            }); 
-            
-            // for hero content animations 
+            });
+
+            // for hero content animations
             $("html").removeClass('ss-preload');
             $("html").addClass('ss-loaded');
-        
+
         });
     };
 
@@ -48,7 +48,7 @@
    /* Menu on Scrolldown
     * ------------------------------------------------------ */
     var ssMenuOnScrolldown = function() {
-        
+
         var hdr= $('.s-header'),
             hdrTop = $('.s-header').offset().top;
 
@@ -66,7 +66,7 @@
 
 
    /* Mobile Menu
-    * ---------------------------------------------------- */ 
+    * ---------------------------------------------------- */
     var ssMobileMenu = function() {
 
         var toggleButton = $('.header-menu-toggle'),
@@ -90,7 +90,7 @@
 
             if (nav.hasClass('mobile')) {
                 toggleButton.toggleClass('is-clicked');
-                nav.slideToggle(); 
+                nav.slideToggle();
             }
         });
 
@@ -124,14 +124,14 @@
             offset: '25%'
 
         });
-        
+
     };
 
 
    /* slick slider
     * ------------------------------------------------------ */
     var ssSlickSlider = function() {
-        
+
         $('.about-desc__slider').slick({
             arrows: false,
             dots: true,
@@ -189,11 +189,11 @@
    /* Smooth Scrolling
     * ------------------------------------------------------ */
     var ssSmoothScroll = function() {
-        
+
         $('.smoothscroll').on('click', function (e) {
             var target = this.hash,
                 $target = $(target);
-            
+
                 e.preventDefault();
                 e.stopPropagation();
 
@@ -219,7 +219,7 @@
 
         $('.alert-box').on('click', '.alert-box__close', function() {
             $(this).parent().fadeOut(500);
-        }); 
+        });
 
     };
 
@@ -227,7 +227,7 @@
    /* Animate On Scroll
     * ------------------------------------------------------ */
     var ssAOS = function() {
-        
+
         AOS.init( {
             offset: 200,
             duration: 600,
@@ -243,7 +243,7 @@
     /* Back to Top
     * ------------------------------------------------------ */
     var ssBackToTop = function() {
-        
+
     var pxShow      = 500,
         goTopButton = $(".go-top");
 
@@ -263,7 +263,7 @@
    /* AjaxChimp
     * ------------------------------------------------------ */
     var ssAjaxChimp = function() {
-        
+
         $('#mc-form').ajaxChimp({
             language: 'es',
             url: cfg.mailChimpURL
