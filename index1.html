@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Decompiled</title>
+  <link rel="icon" type="image/png" href="/images/logo.png"/>
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<style>
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  position: absolute;
+  top: 96%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+ul li {
+  list-style: none;
+  margin: 0 40px;
+}
+
+ul li a .fa {
+  font-size: 40px;
+  color: #262626;
+  line-height: 80px;
+  transition: .5s
+}
+
+ul li a {
+  position: relative;
+  display: block;
+  width: 80px;
+  height: 80px;
+  background: #FFF;
+  text-align: center;
+  transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+  transition: .5s;
+  box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+ul li a:before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  height: 100%;
+  width: 20px;
+  background: #b1b1b1;
+  transition: .5s;
+  transform: rotate(0deg) skewY(-45deg);
+}
+ul li a:after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: -10px;
+  height: 20px;
+  width: 100%;
+  background: #b1b1b1;
+  transition: .5s;
+  transform: rotate(0deg) skewX(-45deg);
+}
+
+ul li a:hover {
+  transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+  box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+}
+
+ul li a:hover .fa {
+  color: #FFF;
+}
+
+ul li:hover:nth-child(1) a {
+  background: #3b5999;
+}
+
+ul li:hover:nth-child(1) a:before {
+  background: #2e4aB6 ;
+}
+
+ul li:hover:nth-child(1) a:after {
+  background: #4a69ad;
+}
+
+ul li:hover:nth-child(2) a {
+  background: #55acee;
+}
+
+ul li:hover:nth-child(2) a:before {
+  background: #4184b7 ;
+}
+
+ul li:hover:nth-child(2) a:after {
+  background: #4d9fde;
+}
+
+ul li:hover:nth-child(3) a {
+  background: #dd4b39;
+}
+
+ul li:hover:nth-child(3) a:before {
+  background: #c13929 ;
+}
+
+ul li:hover:nth-child(3) a:after {
+  background: #e8432e;
+}
+
+ul li:hover:nth-child(4) a {
+  background: #0077B5;
+}
+
+ul li:hover:nth-child(4) a:before {
+  background: #036aa0 ;
+}
+
+ul li:hover:nth-child(4) a:after {
+  background: #0d82bf;
+}
+
+ul li:hover:nth-child(5) a {
+  background: #e4405f;
+}
+
+ul li:hover:nth-child(5) a:before {
+  background: #d02d4c ;
+}
+
+ul li:hover:nth-child(5) a:after {
+  background: #f1395c;
+}
+
+
+.bgimg {
+  background-image: url('https://i.postimg.cc/X7244Csb/photo-2019-01-22-00-48-04.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color:white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+</style>
+</head>
+<body>
+
+<div class="bgimg">
+  <div class="topleft">
+
+  </div>
+  <div class="middle">
+    <img src="images/logo.png" alt="Homepage">
+    <h1>COMING SOON</h1>
+    <hr>
+    <p id="demo" style="font-size:30px"></p>
+    <br>
+    <br>
+    
+  </div>
+
+  
+    <span class="align-middle">
+    <ul>
+      <li><a href="https://www.facebook.com/groups/decompiled.pod "><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+      <li><a href="https://www.twitter.com/decompiled_pod"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+<!--      <li><a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a></li> -->
+      <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+      <li><a href="https://www.instagram.com/decompiled_pod"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+    </ul>
+    </span>
+
+  <div class="bottomleft">
+
+
+  </div>
+</div>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("feb 20, 2019 15:37:25").getTime();
+
+// Update the count down every 1 second
+var countdownfunction = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+
+  if (distance < 0) {
+    clearInterval(countdownfunction);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+</body>
+</html>

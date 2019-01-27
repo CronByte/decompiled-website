@@ -1,248 +1,364 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js" lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Decompiled</title>
-  <link rel="icon" type="image/png" href="/images/logo.png"/>
+
+    <!--- hey you inspecter , you are ugly go home and play pupg------>
+  <!--  ================================================== -->
+    <meta charset="utf-8">
+    <title>Decompiled</title>
+    <link rel="icon" type="image/png" href="/images/logo.png"/>
 
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<style>
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
 
-body, html {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-ul {
-  position: absolute;
-  top: 96%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-ul li {
-  list-style: none;
-  margin: 0 40px;
-}
-
-ul li a .fa {
-  font-size: 40px;
-  color: #262626;
-  line-height: 80px;
-  transition: .5s
-}
-
-ul li a {
-  position: relative;
-  display: block;
-  width: 80px;
-  height: 80px;
-  background: #FFF;
-  text-align: center;
-  transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
-  transition: .5s;
-  box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
-}
-
-ul li a:before {
-  content: '';
-  position: absolute;
-  top: 10px;
-  left: -20px;
-  height: 100%;
-  width: 20px;
-  background: #b1b1b1;
-  transition: .5s;
-  transform: rotate(0deg) skewY(-45deg);
-}
-ul li a:after {
-  content: '';
-  position: absolute;
-  bottom: -20px;
-  left: -10px;
-  height: 20px;
-  width: 100%;
-  background: #b1b1b1;
-  transition: .5s;
-  transform: rotate(0deg) skewX(-45deg);
-}
-
-ul li a:hover {
-  transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
-  box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
-}
-
-ul li a:hover .fa {
-  color: #FFF;
-}
-
-ul li:hover:nth-child(1) a {
-  background: #3b5999;
-}
-
-ul li:hover:nth-child(1) a:before {
-  background: #2e4aB6 ;
-}
-
-ul li:hover:nth-child(1) a:after {
-  background: #4a69ad;
-}
-
-ul li:hover:nth-child(2) a {
-  background: #55acee;
-}
-
-ul li:hover:nth-child(2) a:before {
-  background: #4184b7 ;
-}
-
-ul li:hover:nth-child(2) a:after {
-  background: #4d9fde;
-}
-
-ul li:hover:nth-child(3) a {
-  background: #dd4b39;
-}
-
-ul li:hover:nth-child(3) a:before {
-  background: #c13929 ;
-}
-
-ul li:hover:nth-child(3) a:after {
-  background: #e8432e;
-}
-
-ul li:hover:nth-child(4) a {
-  background: #0077B5;
-}
-
-ul li:hover:nth-child(4) a:before {
-  background: #036aa0 ;
-}
-
-ul li:hover:nth-child(4) a:after {
-  background: #0d82bf;
-}
-
-ul li:hover:nth-child(5) a {
-  background: #e4405f;
-}
-
-ul li:hover:nth-child(5) a:before {
-  background: #d02d4c ;
-}
-
-ul li:hover:nth-child(5) a:after {
-  background: #f1395c;
-}
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
 
 
-.bgimg {
-  background-image: url('https://i.postimg.cc/X7244Csb/photo-2019-01-22-00-48-04.jpg');
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  color:white;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 25px;
-}
 
-.topleft {
-  position: absolute;
-  top: 0;
-  left: 16px;
-}
-
-.bottomleft {
-  position: absolute;
-  bottom: 0;
-  left: 16px;
-}
-
-.middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-hr {
-  margin: auto;
-  width: 40%;
-}
-</style>
 </head>
-<body>
 
-<div class="bgimg">
-  <div class="topleft">
+<body id="top">
 
-  </div>
-  <div class="middle">
-    <img src="images/logo.png" alt="Homepage">
-    <h1>COMING SOON</h1>
-    <hr>
-    <p id="demo" style="font-size:30px"></p>
-    <br>
-    <br>
-    
-  </div>
-
-  
-    <span class="align-middle">
-    <ul>
-      <li><a href="https://www.facebook.com/groups/decompiled.pod "><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-      <li><a href="https://www.twitter.com/decompiled_pod"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-<!--      <li><a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a></li> -->
-      <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-      <li><a href="https://www.instagram.com/decompiled_pod"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-    </ul>
-    </span>
-
-  <div class="bottomleft">
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-jump">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
 
 
-  </div>
-</div>
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
 
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("feb 20, 2019 15:37:25").getTime();
+        <div class="row">
+            <div class="header-logo">
+                <a class="site-logo" href="index.html">
+                   <img src="images/logo.png" alt="Homepage">
+                </a>
+            </div>
 
-// Update the count down every 1 second
-var countdownfunction = setInterval(function() {
+            <nav class="header-nav-wrap">
+                <ul class="header-main-nav">
+                    <li class="current"><a class="smoothscroll" href="#home" title="intro">Decompiled</a></li>
+                    <li><a class="smoothscroll" href="#about" title="about">About</a></li>
+                    <li><a class="smoothscroll" href="#features" title="features">Episodes</a></li>
 
-  // Get todays date and time
-  var now = new Date().getTime();
+                    <li><a class="smoothscroll" href="#download" title="download">Contact</a></li>
+                </ul>
 
-  // Find the distance between now an the count down date
-  var distance = countDownDate - now;
+                <div class="header-cta">
+                    <a href="#download" class="btn btn--primary header-cta__btn smoothscroll">Watch now</a>
+                </div>
+            </nav> <!-- end header-nav-wrap -->
 
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            <a class="header-menu-toggle" href="#"><span>Menu</span></a>
+        </div>
 
-  // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+    </header> <!-- end header -->
 
 
-  if (distance < 0) {
-    clearInterval(countdownfunction);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
+    <!-- home
+    ================================================== -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+                <div class="home-content__left">
+                    <h1>
+                      Presented by CRONBYTE
+                    </h1>
+
+                    <h3>
+                      Indigenous Podcast for Engineers, students makers & entrepreneurs.
+                      Tune In, listen real life experiences & stay on edge with evolving technology world.
+
+                    </h3>
+
+                    <div class="home-content__btn-wrap">
+                        <a href="#download" class="btn btn--primary home-content__btn smoothscroll">
+                            Join us
+                        </a>
+                    </div>
+                </div> <!-- end home-content__left-->
+
+                <div class="home-content__right">
+                    <img src="images/logo.png" srcset="images/logo.png 1x, logo.png 2x">
+                </div> <!-- end home-content__right -->
+
+            </div> <!-- end home-content__main -->
+
+            <ul class="home-content__social">
+                <li><a href="https://www.facebook.com/groups/decompiled.pod">Facebook</a></li>
+                <li><a href="https://www.twitter.com/decompiled_pod">twitter</a></li>
+                <li><a href="https://www.instagram.com/decompiled_pod">Instagram</a></li>
+            </ul>
+
+        </div> <!-- end home-content -->
+
+        <a href="#about" class="home-scroll smoothscroll">
+            <span class="home-scroll__text">Scroll</span>
+            <span class="home-scroll__icon"></span>
+        </a>
+
+    </section> <!-- end s-home -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+                    About
+                </h1>
+                <p class="lead">
+                  Indigenous Podcast for Engineers, students makers & entrepreneurs.
+                </p>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row wide about-desc" data-aos="fade-up">
+
+            <div class="col-full slick-slider about-desc__slider">
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title"> Why?</h3>
+
+                    <p>
+                    Allow you to learn sub consciously doing other things, making best use of your time.
+                    </p>
+                </div>  <!-- end about-desc__slide -->
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title">When</h3>
+
+                    <p>
+                    Coming Soon!!
+                    </p>
+                </div>  <!-- end about-desc__slide -->
+
+                <div class="about-desc__slide">
+                    <h3 class="item-title">For Who</h3>
+
+                    <p>
+                    Podcast for Engineers, students makers & entrepreneurs.
+                    </p>
+                </div>  <!-- end about-desc__slide -->
+
+            </div> <!-- end about-desc__slider -->
+
+        </div> <!-- end about-desc -->
+
+    </section> <!-- end s-about -->
+
+
+    <!-- about-how
+    ================================================== -->
+
+
+    <section id="features" class="s-features target-section">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-1">
+Episodes
+                </h1>
+                <p class="lead">
+                  Coming Soon ...
+                </p>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row features block-1-3 block-m-1-2">
+
+
+
+
+
+
+        </div> <!-- end features -->
+
+
+
+
+
+
+
+
+        <div class="testimonials-wrap" data-aos="fade-up">
+
+            <div class="row">
+                <div class="col-full testimonials-header">
+                    <h2 class="display-2"> Love from twitter!</h2>
+                </div>
+            </div>
+
+            <div class="row testimonials">
+
+                <div class="col-full slick-slider testimonials__slider">
+
+                    <div class="testimonials__slide">
+                        <img src="images/avatars/user-03.jpg" alt="Author image" class="testimonials__avatar">
+
+                        <p>Our Host</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Ayan</span>
+                            <a href="https://www.twitter.com/iayanpahwa" class="testimonials__link">@iayanpahwa</a>
+                        </div>
+                    </div> <!-- end testimonials__slide -->
+
+                    <div class="testimonials__slide">
+                        <img src="images/avatars/user-05.jpg" alt="Author image" class="testimonials__avatar">
+
+                        <p>Our Editor</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Alok</span>
+                            <a href="https://www.twitter.com/alok760" class="testimonials__link">@alok760</a>
+                        </div>
+                    </div> <!-- end testimonials__slide -->
+
+                    <div class="testimonials__slide">
+                        <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">
+
+                        <p>Our Founder</p>
+
+                        <div class="testimonials__author">
+                            <span class="testimonials__name">Mohit Bansal</span>
+                            <a href="https://www.twitter.com/miphilomath" class="testimonials__link">@miphilomath</a>
+                        </div>
+                    </div> <!-- end testimonials__slide -->
+
+                </div> <!-- end testimonials__slider -->
+
+            </div> <!-- end testimonials -->
+
+        </div> <!-- end testimonials-wrap -->
+
+    </section> <!-- end s-features -->
+
+
+
+    <section id="download" >
+    </section>
+
+
+
+
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer footer">
+
+
+        <div class="row section-header align-center">
+            <div class="col-full">
+                <h1 class="display-1">
+                    Let's Stay In Touch :)
+                </h1>
+                <p class="lead">
+                Subscribe for updates, special offers, and other amazing stuff.
+                </p>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row footer__top">
+
+            <div class="col-full footer__subscribe end">
+                <div class="subscribe-form">
+                    <form id="mc-form" class="group" novalidate="true" >
+
+                        <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required="">
+
+
+                        <input type="submit" name="subscribe" value="Subscribe">
+
+                        <label for="mc-email" class="subscribe-message"></label>
+
+                    </form>
+                </div>
+            </div>
+
+        </div> <!-- end footer__top -->
+
+        <div class="row footer__bottom">
+
+            <div class="footer__about col-seven tab-full left">
+
+
+                <h4>Our Host: &nbsp; Ayan Pahwa</h4>
+                &nbsp;
+                <img src="images/host.png" alt="Homepage" style="border-radius:5%;height:15vh;width:20vh;">
+                <p><strong>
+                Embedded Engineer , Tech Content creator , Photographer
+                </strong></p>
+
+                <ul class="footer__social">
+                    <li><a href="https://facebook.com/groups/decompiled.pod"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                    <li><a href="https://twitter.com/decompiled_pod"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="https://instagram.com/decompiled_pod"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="col-five md-seven tab-full right end">
+                <div class="row">
+
+
+                    <div class="footer__contact col-seven mob-full">
+                        <h4>Contact Us.</h4>
+
+                        <p>
+                        <!-- Phone: (+63) 555 1212 <br> -->
+                        <!-- Telegram: @dunkenm <a href="https://t.me/dunkenm"> -->
+                        </p>
+                        <p>
+                        Need help or have a question? Contact us at: <br>
+                        <a href="mailto:contact@decompiled.in" class="footer__mail-link">contact@decompiled.in</a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-full ss-copyright">
+                <span>&copy; Copyright decompiled 2019</span>
+                <span>Design by <a href="decompiled.in">decompiled</a></span>
+            </div>
+
+        </div> <!-- end footer__bottom -->
+
+        <div class="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top"></a>
+        </div>
+
+    </footer> <!-- end s-footer -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
-</html>
