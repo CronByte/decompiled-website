@@ -282,7 +282,7 @@
 
         $.ajaxChimp.translations.es = {
             'submit': 'Submitting...',
-            0: '<i class="fas fa-check"></i> We have sent you a confirmation email',
+            0: '<i class="fas fa-check"></i> Congratulations! You have subscribed to the mailing list.',
             1: '<i class="fas fa-exclamation-triangle"></i> You must enter a valid e-mail address.',
             2: '<i class="fas fa-exclamation-triangle"></i> E-mail address is not valid.',
             3: '<i class="fas fa-exclamation-triangle"></i> E-mail address is not valid.',
