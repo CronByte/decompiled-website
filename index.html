@@ -25,7 +25,9 @@
     <script src="js/pace.min.js"></script>
 
 
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 
@@ -158,6 +160,39 @@ ul.social-icons {
 
 
 
+.ima {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.con:hover .ima {
+  opacity: 0.3;
+}
+
+.con:hover .middle {
+  opacity: 1;
+}
+
+.text {
+ 
+  color: red;
+  font-size: 25px;
+  padding: 16px 32px;
+}
 
 
   </style>  
@@ -378,15 +413,26 @@ Episodes
     </section> <!-- end s-features -->
 
     <section id="team" class="s-about target-section">
-
-        <div class="row section-header has-bottom-sep" data-aos="fade-up">
-            <div class="col-full">
+        <div class="col-full">
+        <div class="row " data-aos="fade-up">
+            
                 <center><h2>MEET the TEAM</h2></center>
                       <div class="col-three">
 
-
+                        <div class="con">
+                            <img src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2F3.bp.blogspot.com%2F-JLTwz1rd1DM%2FUDIg9uHiARI%2FAAAAAAAAPyc%2FB302G85QOpE%2Fs1600%2FPink%2BPanther%2B2.jpg&f=1"  style="width:100%"" alt="Avatar" class="ima" style="width:100%">
+                            <div class="middle">
+                              <div class="text">
+                              
+                           <i class="fa fa-linkedin"></i>
+                           <i class="fa fa-twitter"></i>
+                              
+                              
+                              </div>
+                            </div>
+                          </div>
    
-                        <img src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2F3.bp.blogspot.com%2F-JLTwz1rd1DM%2FUDIg9uHiARI%2FAAAAAAAAPyc%2FB302G85QOpE%2Fs1600%2FPink%2BPanther%2B2.jpg&f=1" alt="Jane" style="width:100%">
+                        
                         
                          
                         </div>
