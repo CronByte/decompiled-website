@@ -1401,6 +1401,16 @@ form .form-callback.error {
 .logo {
 	float: left;
 	padding: 25px 0;
+	max-width: 70px;
+	max-height: 70px;
+	margin: 0;
+	line-height: 0;
+}
+
+.logo_footer {
+	float: left;
+	max-width: 70px;
+	max-height: 70px;
 	margin: 0;
 	line-height: 0;
 }
@@ -1638,7 +1648,7 @@ form .form-callback.error {
 	width: 100%;
 	height: 100%;
 	background-color: #110f16;
-	background-color: rgba(0, 0, 0, 0.7);
+	background-color: rgba(0, 0, 0, 0.3);
 	zoom: 1;
 	background-color: transparent\9;
 	/* -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#80110f16, endColorstr=#80110f16)";
@@ -1823,7 +1833,7 @@ form .form-callback.error {
 }
 
 .podcast-card .podcast-meta .item + .item:before {
-	content: "//";
+	content: "|";
 	margin: 0 10px 0 5px;
 }
 
@@ -2246,7 +2256,7 @@ form .form-callback.error {
 .podcast-links .btn-success:hover,
 .btn-success:focus {
 	background: #17141e;
-	border: #17141e;
+	border: #17141e	;
 }
 
 
