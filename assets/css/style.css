@@ -1861,6 +1861,8 @@ form .form-callback.error {
 	float: left;
 }
 
+
+
 .podcast-card.full .podcast-image a:after {
 	content: "";
 	position: absolute;
