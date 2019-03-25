@@ -314,8 +314,8 @@ li {
 
 .btn-success:hover,
 .btn-success:focus {
-	background: ##050407;
-	border: ##050407;
+	background: #050407;
+	border: #050407;
 }
 
 .btn-primary {
@@ -1097,7 +1097,7 @@ form .form-callback.error {
 }
 
 .breadcrumb > li + li::before {
-	content: "// ";
+	content: "⮞";
 }
 
 .breadcrumb a {
@@ -2030,7 +2030,7 @@ form .form-callback.error {
 .page-header-podcast,
 .page-error {
 	position: relative;
-	height: 450px;
+	height: 400px;
 	padding: 0;
 	margin: 0;
 	background-position: center center;
@@ -2084,9 +2084,8 @@ form .form-callback.error {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	padding-top: 140px;
-	background-color: #110f16;
-	background-color: rgba(17, 15, 22, 0.7);
+	padding-top: 100px;
+	background-color: rgba(17, 15, 22, 0.0);
 	zoom: 1;
 	background-color: transparent\9;
 	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#b3110f16, endColorstr=#b3110f16)";
@@ -2239,6 +2238,17 @@ form .form-callback.error {
 .podcast-links .btn {
 	width: 65px;
 }
+.podcast-links .btn-success {
+	background: #3abeff;
+	border: #3abeff;
+}
+
+.podcast-links .btn-success:hover,
+.btn-success:focus {
+	background: #17141e;
+	border: #17141e;
+}
+
 
 .podcast-links .podcast-link-cite {
 	margin-left: 10px;
