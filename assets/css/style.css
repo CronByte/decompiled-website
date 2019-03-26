@@ -508,6 +508,11 @@ li {
 	background: #3b5998;
 }
 
+.social-list.colored .reddit {
+	border: #ff4500;
+	background: #ff4500;
+}
+
 .social-list.colored .facebook:hover a,
 .social-list.colored .facebook:focus a {
 	border: #30487b;
